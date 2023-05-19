@@ -10,7 +10,7 @@
     
     <?php
 
-        if (filter_input(SERVER_INPUT,'REQUEST_METHOD') = "POST") {
+        if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') == 'POST') {
             echo "deu bom";
         } else {
             echo "deu ruim";
