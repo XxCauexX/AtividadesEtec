@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,38 +14,38 @@
             <h1>Formulario</h1>
         </div>      
         <div class="campo">
-            <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
+            <input type="text" name="nome" id="nome" placeholder="Informe seu nome" onblur="verifica()">
         </div>  
         <div class="campo">
-            <input type="text" name="sobrenome" id="sobrenome" placeholder="Informe seu sobrenome">
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Informe seu sobrenome" onblur="verifica()">
         </div>
         <div class="campo">
-            <input type="number" name="idade" id="idade" placeholder="Informe sua idade">
+            <input type="number" name="idade" id="idade" placeholder="Informe sua idade" onblur="verifica()">
         </div>
         <div class="campo">
-            <input type="email" name="email" id="email" placeholder="Informe seu email">
+            <input type="email" name="email" id="email" placeholder="Informe seu email" onblur="verifica()">
         </div>
         <div class="campo">
-            <input type="number" name="telefone" id="telefone" placeholder="Informe seu telefone">
+            <input type="number" name="telefone" id="telefone" placeholder="Informe seu telefone" onblur="verifica()">
         </div>
         <div class="campo">
-            <input type="text" name="rua" id="rua" placeholder="Informe a sua rua">
+            <input type="text" name="rua" id="rua" placeholder="Informe a sua rua" onblur="verifica()">
         </div>
         <div class="campo">
-            <input type="number" name="numero" id="numero" placeholder="Numero de residencia">
+            <input type="number" name="numero" id="numero" placeholder="Numero de residencia" onblur="verifica()">
         </div>
         <div class="campo">
-            <input type="text" name="bairro" id="bairro" placeholder="Informe seu bairro">
+            <input type="text" name="bairro" id="bairro" placeholder="Informe seu bairro" onblur="verifica()">
         </div>
         <div class="campo">
-            <input type="text" name="cidade" id="cidade" placeholder="Informe a sua cidade">
+            <input type="text" name="cidade" id="cidade" placeholder="Informe a sua cidade" onblur="verifica()">
         </div>
         <hr>
-        <div class="campo">
+        <div class="campo" id="qsexo">
             <label for="">Qual seu sexo:</label>
-            <input type="radio" name="sexo" id="sexo" value="Masculino">
+            <input type="radio" name="sexo" id="sexo" value="Masculino" onblur="verifica()">
             <label for="">Masculino</label>
-            <input type="radio" name="sexo" id="sexo" value="Masculino">
+            <input type="radio" name="sexo" id="sexo" value="Feminino" onblur="verifica()">
             <label for="">Feminino</label>
         </div>
         <div class="campo">
@@ -53,8 +53,9 @@
             <input type="checkbox" name="notifica" id="notifica">
         </div>
         <div class="campo"> 
-            <input type="submit" value="Enviar">
+            <input type="button" value="Enviar" onclick="btnVerifica()">
         </div>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
