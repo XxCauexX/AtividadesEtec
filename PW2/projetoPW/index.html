@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <form action="processamento.php" method="post" id="form1">
+            <h1>Formulario</h1>
+            <div class="campo">
+                <input type="text" name="nome1" id="nome1" placeholder="Insira seu nome">
+            </div>
+            <div class="campo">
+                <input type="number" name="idade1" id="idade1" placeholder="Insira sua idade">
+            </div>
+            <div class="campo">
+                <input type="submit" value="Cadastrar" id="botao">
+            </div>
+            <div>
+                <input type="button" value="Buscar pessoa" onclick="buscar()">
+            </div>
+        </form>
+    </div>   
+    <script src="script.js"></script>
+</body>
+</html>
